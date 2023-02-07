@@ -1,7 +1,7 @@
-import logo from '/Users/bigfr/ac_excercise/new-app/src/icons/logo.svg'
-import fb from '/Users/bigfr/ac_excercise/new-app/src/icons/fb.svg'
-import ig from '/Users/bigfr/ac_excercise/new-app/src/icons/ig.svg'
-import whoscall from '/Users/bigfr/ac_excercise/new-app/src/icons/whoscall.svg'
+import logo from '../../icons/logo.svg'
+import fb from '../../icons/fb.svg'
+import ig from '../../icons/ig.svg'
+import whoscall from '../../icons/whoscall.svg'
 import styles from './Footer.module.css'
 
 function Footer() {
