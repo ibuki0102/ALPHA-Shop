@@ -1,7 +1,7 @@
-import logo from '/Users/bigfr/ac_excercise/new-app/src/icons/logo.svg'
-import search from '/Users/bigfr/ac_excercise/new-app/src/icons/search.svg'
-import cart from '/Users/bigfr/ac_excercise/new-app/src/icons/cart.svg'
-import moon from '/Users/bigfr/ac_excercise/new-app/src/icons/moon.svg'
+import logo from '../../icons/logo.svg'
+import search from '../../icons/search.svg'
+import cart from '../../icons/cart.svg'
+import moon from '../../icons/moon.svg'
 import styles from './Header.module.css'
 
 function Header() {

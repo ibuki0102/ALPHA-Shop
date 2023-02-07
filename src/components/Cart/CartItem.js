@@ -1,6 +1,6 @@
 import styles from './Cart.module.css'
-import plus from '/Users/bigfr/ac_excercise/new-app/src/icons/plus.svg'
-import minus from '/Users/bigfr/ac_excercise/new-app/src/icons/minus.svg'
+import plus from '../../icons/plus.svg'
+import minus from '../../icons/minus.svg'
 
 function CartItem({ ItemData }) {
   return (

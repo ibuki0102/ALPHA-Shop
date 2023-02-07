@@ -1,5 +1,5 @@
 import styles from './ProgressControl.module.css'
-import arrow from '/Users/bigfr/ac_excercise/new-app/src/icons/arrow.svg'
+import arrow from '../../icons/arrow.svg'
 
 function ProgressControl() {
   return (
