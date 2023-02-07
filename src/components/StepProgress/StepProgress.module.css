@@ -1,0 +1,57 @@
+.ProgressContainer {
+  margin-bottom: 40px;
+  width: 500px;
+}
+
+.ProgressGroupContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.CheckOut {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.ProgressLabel {
+  font-weight: 600;
+}
+
+.StepNumber {
+  display: inline-block;
+  font-size: 14px;
+  width: 20px;
+  text-align: center;
+  margin-right: 5px;
+  border-radius: 50%;
+  border: 1px rgb(145, 145, 145) solid;
+}
+
+.StepGroup {
+  position: relative;
+  color: rgb(145, 145, 145);
+}
+
+.ProgressBar {
+  height: 2px;
+  width: 60px;
+  background-color: lightgray;
+}
+
+.ActiveStepNumber {
+  composes: StepNumber;
+  border: 1px black solid;
+  color: white;
+  background-color: black;
+}
+
+.ActiveStepGroup {
+  composes: StepGroup;
+  color: black;
+}
+
+.ActiveProgressBar {
+  composes: ProgressBar;
+  background-color: black;
+}

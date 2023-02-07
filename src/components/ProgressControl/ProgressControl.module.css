@@ -1,0 +1,31 @@
+.ProgressControlContainer {
+  margin-top: 80px;
+}
+
+.Hr {
+  height: 1px;
+  width: 100%;
+  background-color: lightgray;
+  margin-bottom: 10px;
+}
+
+.NextStep {
+  display: flex;
+  justify-content: end;
+}
+
+.NextStepButton {
+  color: white;
+  background-color: rgb(245, 115, 153);
+  border: 0px;
+  border-radius: 10px;
+  padding: 13px 40px;
+  margin-top: 10px;
+}
+.NextStepButton:hover {
+  cursor: pointer;
+}
+
+.Arrow {
+  margin-left: 10px;
+}
