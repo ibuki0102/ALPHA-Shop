@@ -3,7 +3,9 @@ import cartData from './cartData'
 import CartItem from './CartItem'
 
 export default function Cart() {
-  const listItems = cartData.map((ItemData) => <CartItem ItemData={ItemData} />)
+  const listItems = cartData.map((ItemData) => (
+    <CartItem ItemData={ItemData} key={ItemData.id} />
+  ))
   return (
     <div className={styles.CartContainer}>
       <div className={styles.CartTitle}>
