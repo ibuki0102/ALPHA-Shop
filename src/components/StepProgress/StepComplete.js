@@ -1,4 +1,3 @@
-import style from './StepProgress.module.css'
 import complete from '../../icons/complete.svg'
 import styles from './StepProgress.module.css'
 
