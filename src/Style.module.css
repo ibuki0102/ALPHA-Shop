@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .Body {
   width: 1110px;
   margin: 0 auto;
@@ -14,7 +17,7 @@
 }
 
 .RightContainer {
-  width: 400px;
+  width: 480px;
   margin: 100px 0px 0px 50px;
   border: 1px lightgray solid;
   border-radius: 5px;

@@ -1,12 +1,14 @@
 .ProgressContainer {
   margin-bottom: 40px;
   width: 500px;
+  height: 110px;
 }
 
 .ProgressGroupContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 24px;
 }
 
 .CheckOut {
@@ -21,7 +23,8 @@
 .StepNumber {
   display: inline-block;
   font-size: 14px;
-  width: 20px;
+  width: 24px;
+  height: 24px;
   text-align: center;
   margin-right: 5px;
   border-radius: 50%;
@@ -30,6 +33,7 @@
 
 .StepGroup {
   position: relative;
+  display: flex;
   color: rgb(145, 145, 145);
 }
 
@@ -54,4 +58,10 @@
 .ActiveProgressBar {
   composes: ProgressBar;
   background-color: black;
+}
+.CompleteStepIcon {
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
