@@ -1,4 +1,4 @@
-import styles from './StepProgress.module.css'
+import styles from './StepProgress.module.scss'
 import StepComplete from './StepComplete'
 
 function Step({ currentStep, progressLabel, stepNumber }) {

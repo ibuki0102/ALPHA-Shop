@@ -1,4 +1,4 @@
-import styles from './StepThreePanel.module.css'
+import styles from './StepThreePanel.module.scss'
 import InputFormat from './InputFormat'
 
 function StepThreePanel() {

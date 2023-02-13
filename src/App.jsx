@@ -1,4 +1,4 @@
-import styles from './Style.module.css'
+import styles from './Style.module.scss'
 import Cart from './components/Cart/Cart'
 import StepProgress from './components/StepProgress/StepProgress'
 import StepOnePanel from './components/StepPanel/StepOnePanel'

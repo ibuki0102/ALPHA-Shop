@@ -1,0 +1,35 @@
+.SiteFooter {
+  margin-top: 100px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  .FooterContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto 0;
+    width: 1110px;
+    .FooterLogoContainer {
+      display: flex;
+      align-self: center;
+      .ShopName {
+        display: inline-block;
+        margin: 0 0 0 10px;
+      }
+    }
+    .PageLink {
+      display: block;
+      margin-bottom: 5px;
+      color: gray;
+    }
+    .TelInfo {
+      color: gray;
+      margin-bottom: 5px;
+    }
+
+    .SocialIconGroup {
+      display: flex;
+      gap: 15px;
+    }
+  }
+}

@@ -1,6 +1,6 @@
-import styles from './ProgressControl.module.css'
-import nextArrow from '../../icons/nextArrow.svg'
-import preArrow from '../../icons/preArrow.svg'
+import styles from './ProgressControl.module.scss'
+import nextArrow from 'icons/nextArrow.svg'
+import preArrow from 'icons/preArrow.svg'
 
 function ProgressControl({ currentStep, setCurrentStep }) {
   function handleNextClick(event) {
@@ -18,24 +18,22 @@ function ProgressControl({ currentStep, setCurrentStep }) {
   return (
     <div className={styles.ProgressControlContainer}>
       <div className={styles.Hr}></div>
-      <section className={styles.ButtonGroupContainer}>
-        <section className={styles.ButtonGroup} data-phase="shipping">
-          <button
-            onClick={handlePreClick}
-            className={
-              currentStep === 1
-                ? styles.DisabledPreStepButton
-                : styles.PreStepButton
-            }
-          >
-            <img className={styles.Arrow} src={preArrow} alt="preArrow" />
-            上一步
-          </button>
-          <button onClick={handleNextClick} className={styles.NextStepButton}>
-            {currentStep === 3 ? '確認下單' : '下一步'}
-            <img className={styles.Arrow} src={nextArrow} alt="nextArrow" />
-          </button>
-        </section>
+      <section className={styles.ButtonGroup}>
+        <button
+          onClick={handlePreClick}
+          className={
+            currentStep === 1
+              ? styles.DisabledPreStepButton
+              : styles.PreStepButton
+          }
+        >
+          <img className={styles.Arrow} src={preArrow} alt="preArrow" />
+          上一步
+        </button>
+        <button onClick={handleNextClick} className={styles.NextStepButton}>
+          {currentStep === 3 ? '確認下單' : '下一步'}
+          <img className={styles.Arrow} src={nextArrow} alt="nextArrow" />
+        </button>
       </section>
     </div>
   )

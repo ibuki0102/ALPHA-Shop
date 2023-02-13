@@ -1,0 +1,37 @@
+.SiteHeader {
+  display: flex;
+  position: relative;
+  ol,
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  .NavbarMenu {
+    width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .NavList {
+      display: flex;
+      gap: 25px;
+      font-weight: 700;
+      margin-top: 22px;
+    }
+  }
+  .HeaderLogoContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    .ShopName {
+      margin-left: 10px;
+      font-weight: 700;
+    }
+  }
+}

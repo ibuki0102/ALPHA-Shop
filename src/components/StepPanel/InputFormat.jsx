@@ -1,4 +1,4 @@
-import styles from './StepOnePanel.module.css'
+import styles from './StepOnePanel.module.scss'
 
 function InputFormat({ inputLabel, type, placeHolder }) {
   return (

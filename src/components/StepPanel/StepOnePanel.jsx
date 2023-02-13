@@ -1,4 +1,4 @@
-import styles from './StepOnePanel.module.css'
+import styles from './StepOnePanel.module.scss'
 import InputFormat from './InputFormat'
 import SelectFormat from './SelectFormat'
 import stepOneOption from './StepOneOption'

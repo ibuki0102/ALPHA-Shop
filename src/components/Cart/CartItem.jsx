@@ -1,13 +1,8 @@
-import styles from './Cart.module.css'
+import styles from './Cart.module.scss'
 import plus from '../../icons/plus.svg'
 import minus from '../../icons/minus.svg'
 
-function CartItem({
-  itemData,
-  cartItems,
-  setCartItems,
-  betterDisplayQuantity,
-}) {
+function CartItem({ itemData, cartItems, setCartItems }) {
   // 用changeType來判斷是要加還是減
   function handleChange(id, changeType) {
     let newCartItems = cartItems.map((item) => {
@@ -28,16 +23,16 @@ function CartItem({
   const { id, img, name, quantity, price } = itemData
   return (
     <div key={id} className={styles.CartItem}>
-      <div className={styles.CartItemImg}>
+      <div>
         <img className={styles.ItemImg} src={img} alt={name} />
       </div>
       <div className={styles.CartItemInfo}>
         <div className={styles.CartItemNamePrice}>
-          <div className={styles.CartItemName}>
-            {itemData.name}【${price}】
+          <div>
+            {name}【${price}】
           </div>
           <div className={styles.CartItemPrice}>
-            ${betterDisplayQuantity(price * quantity)}
+            ${(price * quantity).toLocaleString()}
           </div>
         </div>
         <div className={styles.CartItemQuantity}>

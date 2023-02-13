@@ -1,4 +1,4 @@
-import styles from './Cart.module.css'
+import styles from './Cart.module.scss'
 import cartData from './cartData'
 import { useState } from 'react'
 import CartItem from './CartItem'
@@ -14,21 +14,9 @@ function Cart() {
     return (
       <>
         <div>小計</div>
-        <div className={styles.Price}>${betterDisplayQuantity(total)}</div>
+        <div className={styles.Price}>${total.toLocaleString()}</div>
       </>
     )
-  }
-  function betterDisplayQuantity(quantity) {
-    if (Math.floor(quantity / 1000) !== 0) {
-      let thousand = Math.floor(quantity / 1000)
-      let remain = quantity - 1000 * thousand
-      if (remain === 0) {
-        return `${thousand},000`
-      }
-      return `${thousand},${remain}`
-    } else {
-      return quantity
-    }
   }
   const listItems = cartItems.map((itemData) => (
     <CartItem
@@ -36,15 +24,14 @@ function Cart() {
       key={itemData.id}
       cartItems={cartItems}
       setCartItems={setCartItems}
-      betterDisplayQuantity={betterDisplayQuantity}
     />
   ))
   return (
     <div className={styles.CartContainer}>
-      <div className={styles.CartTitle}>
+      <div>
         <h3>購物籃</h3>
       </div>
-      <div className={styles.CartItemContainer}>
+      <div>
         {listItems}
         <div className={styles.InfoContainer}>
           <div>運費</div>
