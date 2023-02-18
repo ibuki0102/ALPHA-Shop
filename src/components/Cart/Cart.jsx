@@ -1,10 +1,10 @@
 import styles from './Cart.module.scss'
-import cartData from './cartData'
-import { useState } from 'react'
+import { useContext } from 'react'
 import CartItem from './CartItem'
+import { CartContext } from 'contexts/CartContext'
 
 function Cart() {
-  const [cartItems, setCartItems] = useState(cartData)
+  const [cartData, setCartData] = useContext(CartContext)
   function CalculateTotal({ cartItems }) {
     let total = 0
     cartItems.map((item) => {
@@ -18,12 +18,12 @@ function Cart() {
       </>
     )
   }
-  const listItems = cartItems.map((itemData) => (
+  const listItems = cartData.map((itemData) => (
     <CartItem
       itemData={itemData}
       key={itemData.id}
-      cartItems={cartItems}
-      setCartItems={setCartItems}
+      cartItems={cartData}
+      setCartItems={setCartData}
     />
   ))
   return (
@@ -38,7 +38,7 @@ function Cart() {
           <div className={styles.Price}>免費</div>
         </div>
         <div className={styles.InfoContainer}>
-          <CalculateTotal cartItems={cartItems} />
+          <CalculateTotal cartItems={cartData} />
         </div>
       </div>
     </div>

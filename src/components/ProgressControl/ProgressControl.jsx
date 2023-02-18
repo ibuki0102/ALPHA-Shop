@@ -1,12 +1,28 @@
 import styles from './ProgressControl.module.scss'
-import nextArrow from 'icons/nextArrow.svg'
-import preArrow from 'icons/preArrow.svg'
+import nextArrow from 'assets/icons/nextArrow.svg'
+import preArrow from 'assets/icons/preArrow.svg'
+import { CartContext } from 'contexts/CartContext'
+import { PaymentContext } from 'contexts/PaymentContext'
+import { useContext } from 'react'
 
 function ProgressControl({ currentStep, setCurrentStep }) {
+  const cartData = useContext(CartContext)
+  const paymentContext = useContext(PaymentContext)
+  function calculateTotal(cartData) {
+    let cartDatas = cartData[0]
+    let total = 0
+    cartDatas.map((data) => {
+      return (total += data.price * data.quantity)
+    })
+    return total
+  }
   function handleNextClick(event) {
     event.preventDefault()
     if (currentStep !== 3) {
       setCurrentStep(currentStep + 1)
+    } else {
+      console.log(paymentContext[0])
+      console.log(`Total Price is: $${calculateTotal(cartData)}`)
     }
   }
   function handlePreClick(event) {

@@ -1,8 +1,9 @@
 import styles from './Cart.module.scss'
-import plus from '../../icons/plus.svg'
-import minus from '../../icons/minus.svg'
+import plus from 'assets/icons/plus.svg'
+import minus from 'assets/icons/minus.svg'
 
 function CartItem({ itemData, cartItems, setCartItems }) {
+  const { id, img, name, quantity, price } = itemData
   // 用changeType來判斷是要加還是減
   function handleChange(id, changeType) {
     let newCartItems = cartItems.map((item) => {
@@ -20,7 +21,6 @@ function CartItem({ itemData, cartItems, setCartItems }) {
     newCartItems = newCartItems.filter((item) => item.quantity > 0)
     setCartItems(newCartItems)
   }
-  const { id, img, name, quantity, price } = itemData
   return (
     <div key={id} className={styles.CartItem}>
       <div>

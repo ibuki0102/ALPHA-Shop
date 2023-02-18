@@ -1,7 +1,7 @@
-import logo from 'icons/logo.svg'
-import fb from 'icons/fb.svg'
-import ig from 'icons/ig.svg'
-import whoscall from 'icons/whoscall.svg'
+import logo from 'assets/icons/logo.svg'
+import fb from 'assets/icons/fb.svg'
+import ig from 'assets/icons/ig.svg'
+import whoscall from 'assets/icons/whoscall.svg'
 import styles from './Footer.module.scss'
 
 function Footer() {

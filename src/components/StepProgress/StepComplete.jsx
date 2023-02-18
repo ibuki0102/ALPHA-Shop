@@ -1,4 +1,4 @@
-import complete from 'icons/complete.svg'
+import complete from 'assets/icons/complete.svg'
 import styles from './StepProgress.module.scss'
 
 function Complete() {

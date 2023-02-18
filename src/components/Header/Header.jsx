@@ -1,7 +1,7 @@
-import logo from 'icons/logo.svg'
-import search from 'icons/search.svg'
-import cart from 'icons/cart.svg'
-import moon from 'icons/moon.svg'
+import logo from 'assets/icons/logo.svg'
+import search from 'assets/icons/search.svg'
+import cart from 'assets/icons/cart.svg'
+import moon from 'assets/icons/moon.svg'
 import styles from './Header.module.scss'
 
 function Header() {

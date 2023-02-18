@@ -1,4 +1,6 @@
-const cartData = [
+import { createContext } from 'react'
+
+export const initialCartData = [
   {
     id: '1',
     name: '貓咪罐罐',
@@ -15,4 +17,4 @@ const cartData = [
   },
 ]
 
-export default cartData
+export const CartContext = createContext(initialCartData)
