@@ -6,12 +6,12 @@ import { PaymentContext } from 'contexts/PaymentContext'
 import { useContext } from 'react'
 
 function ProgressControl({ currentStep, setCurrentStep }) {
-  const cartData = useContext(CartContext)
+  // 不加[0]的話cartData會取得包含cartData跟setCartData的陣列，但這裡只需要cartData
+  const cartData = useContext(CartContext)[0]
   const paymentContext = useContext(PaymentContext)
   function calculateTotal(cartData) {
-    let cartDatas = cartData[0]
     let total = 0
-    cartDatas.map((data) => {
+    cartData.map((data) => {
       return (total += data.price * data.quantity)
     })
     return total
